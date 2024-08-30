@@ -1,0 +1,34 @@
+# Blog de reciclagem
+
+## Introdução
+Este é um projeto HTML desenvolvido para atividade proposta pela professora Bruna, onde o objetivo
+foi construir um site sobre Reciclagem de Eletro-Eletrônicos, afim de passar informações sobre impactos
+causados por eles, seu processo de reciclagem, dúvidas frequentes junto com um formulario de contato.
+
+## Estrutura do Projeto
+- `index.html`: Página principal.
+- `sobre.html`: Página sobre reciclagem.
+- `perguntas.html`: Página sobre perguntas frenquentes.
+- `impactos.html`: Página sobre impactos.
+- `processo.html`: Página sobre processos da reciclagem.
+- `/style`: Contém arquivos CSS.
+
+- `/docs`: Documentação do projeto.
+
+## Tecnologias Utilizadas
+- HTML5
+- CSS3
+
+
+## Motivos de cada escolha no desenvolvimento
+
+-Classes dentro das 'div's foram focadas cada uma para seu estilo próprio.
+-Foi usado também classes gerais, como Container.
+-A escolha das cores foi baseada nas cores do meio Ambiente, as mesmas foram identificadas em uma imagem de 
+reciclagem.
+-As cores dos Textos basea-se para dar constraste com as cores de fundo, e seja fácil de ser vistas e lidas.
+-Na parte de Impactos houve mudança na escolha de cores de fundo, por contes Notícias, foi escolhido
+colocar as informações com a cor de fundo de site de Notícias.
+-Principais cores usadas foram: green, #c5b059, #504E42, #fff, black.
+
+

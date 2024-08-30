@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclagem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="topo">
+        <h1><i class="fas fa-futbol"></i> Blog do Corinthians</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+            <li><a href="historia.html"><i class="fas fa-book"></i> História do Clube</a></li>
+            <li><a href="jogos.html"><i class="fas fa-calendar-alt"></i> Jogos e Notícias</a></li>
+            <li><a href="formulario.html"><i class="fas fa-envelope"></i> Formulário de Contato</a></li>
+            <li><a href="elenco.html"><i class="fas fa-users"></i> Elenco</a></li>
+        </ul>
+    </nav>
+  
+    <main>
+        <h2><i class="fas fa-paper-plane"></i> Formulário para entrar em Contato com Corinthians</h2>
+        <section class="formulario">
+            <form method="post" enctype="multipart/form-data">
+                <fieldset class="form">
+                    <legend><i class="fas fa-user"></i> Informações Pessoais</legend>
+                    <label for="nome"><i class="fas fa-user"></i> Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <br><br>
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="senha"><i class="fas fa-lock"></i> Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <br><br>
+                    <label for="telefone"><i class="fas fa-phone"></i> Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                    <br><br>
+                    <label for="idade"><i class="fas fa-calendar-alt"></i> Idade:</label>
+                    <input type="number" id="idade" name="idade" required>
+                    <br><br>
+                    <label for="aniversario"><i class="fas fa-calendar-day"></i> Data de Aniversário:</label>
+                    <input type="date" id="aniversario" name="aniversario">
+                    <br><br>
+                </fieldset>
+                <section>
+                    <fieldset>
+                        <legend><i class="fas fa-cogs"></i> Preferências:</legend>
+                        <label for="genero"><i class="fas fa-envelope"></i> Melhor Forma de Contato:</label>
+                        <select name="genero" id="genero" required>
+                            <option value="">Selecione</option>
+                            <option value="Email">Email</option>
+                            <option value="Telefone">Telefone</option>
+                        </select>
+                        <br><br>
+                        <label><i class="fas fa-clock"></i> Horário Preferencial para Contato:</label>
+                        <br><br>
+                        <input type="checkbox" name="horario" id="manha" value="manha">
+                        <label for="manha">De Manhã</label><br>
+                        <input type="checkbox" name="horario" id="tarde" value="tarde">
+                        <label for="tarde">De Tarde</label><br>
+                </section>
+                <section>
+                    <fieldset>
+                        <legend><i class="fas fa-question-circle"></i> Como Ficou Sabendo do Nosso Site:</legend>
+                        <textarea name="duvida" id="duvida" cols="80" rows="10" required></textarea>
+                    </fieldset>
+                </section>
+                <br><br>
+                <section>
+                    <fieldset>
+                        <legend><i class="fas fa-upload"></i> Faça Upload de Arquivos sobre o Corinthians:</legend>
+                        <label for="arquivos"><i class="fas fa-file-upload"></i> Selecione os Arquivos:</label>
+                        <input type="file" id="arquivos" name="arquivos[]" accept="image/*,video/*,.pdf" multiple>
+                    </fieldset>
+                </section>
+                <br><br>
+                <section class="button-section">
+                    <button type="submit" class="button"><i class="fas fa-paper-plane"></i> Enviar</button>
+                </section>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="#topo"><i class="fas fa-arrow-up"></i> Voltar ao topo</a>
+        <p>&copy; 2024 Blog Reciclagem</p>
+    </footer>
+</body>
+</html>

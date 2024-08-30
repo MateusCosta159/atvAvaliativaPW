@@ -1,0 +1,289 @@
+body {
+    background-color: #000000; /* Fundo preto, cor tradicional do Corinthians */
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    color: #FFFFFF; /* Texto branco para contraste */
+}
+
+header {
+    text-align: center;
+    background-color: #333333; /* Fundo cinza escuro para o cabeçalho */
+    padding: 20px 0;
+    color: #FFFFFF;
+    border-bottom: 4px solid #ffffff; /* Barra branca abaixo do cabeçalho */
+}
+
+nav {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Links em preto para contraste */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #C4A92E; /* Dourado claro ao passar o mouse */
+    text-decoration: underline;
+}
+
+h2, h3 {
+    color: #C4A92E; /* Dourado claro para subtítulos e títulos */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 1300px;
+    margin: auto; 
+    align-items: center; 
+    height: 100%; 
+    justify-content: center;
+}
+
+.item {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.escalação {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px; /* Limita a largura da seção de escalação */
+    padding: 0 20px; /* Adiciona espaçamento lateral */
+}
+
+.escalação h2 {
+    color: #C4A92E; /* Dourado claro para o título */
+    margin-bottom: 50px;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se ajustem conforme a largura da tela */
+    margin-bottom: 30px; /* Reduz o espaçamento entre as linhas */
+}
+
+.posicao {
+    background-color: #333333; /* Fundo cinza escuro para os cards dos jogadores */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0 10px;
+    width: 250px;
+    box-sizing: border-box; /* Inclui o padding e border no cálculo da largura */
+}
+
+.posicao img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Ajusta o espaço abaixo da imagem */
+}
+
+.posicao p {
+    margin: 5px 0;
+    color: #D1D1D1; /* Cinza claro para o texto */
+}
+
+.linha-defensiva,
+.linha-zaga,
+.linha-meio-campo,
+.linha-ataque {
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #333333;
+    text-align: center;
+    padding: 20px 0;
+    color: #FFFFFF;
+    border-top: 4px solid #ffffff;
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #C4A92E;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.contato, .formulario {
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #333333; /* Fundo cinza escuro para formulários */
+}
+
+.button {
+    background-color: #333; /* Fundo cinza escuro para o botão */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px double #fff;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.curiosidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta a largura mínima das colunas */
+    grid-gap: 20px; 
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 20px auto; 
+    padding: 20px; 
+    text-align: left; /* Texto alinhado à esquerda */
+    width: 90%; /* Ajusta a largura da seção */
+}
+
+.curiosidades h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #C4A92E; /* Dourado claro para os títulos */
+}
+
+.curiosidades ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.curiosidades li {
+    background-color: #333333; /* Fundo cinza escuro para cada item */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.curiosidades h3 {
+    color: #C4A92E; /* Dourado claro para subtítulos */
+    margin-bottom: 10px;
+}
+
+/* Media query para telas maiores que 768px (computadores) */
+@media (min-width: 768px) {
+    .curiosidades {
+        grid-template-columns: repeat(auto-fit, minmax(850px, 1fr)); /* Aumenta a largura mínima das colunas para telas maiores */
+        max-width: 100%; /* Ajusta a largura máxima para 100% */
+    }
+}
+
+/* Media query para telas menores que 768px (dispositivos móveis) */
+@media (max-width: 768px) {
+    .curiosidades {
+        grid-template-columns: 1fr; /* Coloca todos os itens em uma única coluna */
+    }
+}
+
+.jogos {
+    text-align: center;
+    margin: 20px 0;
+    color: #000000;
+}
+
+.jogos .item {
+    margin-bottom: 20px;
+}
+
+.jogos ul.item {
+    list-style: none;
+    padding: 0;
+}
+
+.jogos ul.item li {
+    background-color: #f1ecec;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.jogos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias {
+    margin-top: 30px;
+}
+
+.noticias article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.noticias .button {
+    margin-top: 10px;
+}
+
+.container-jogos {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.jogos h3 {
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.historia, .index {
+    background-color: #3e3939;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    color: #fff;
+}
